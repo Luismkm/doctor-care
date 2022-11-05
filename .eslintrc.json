@@ -1,15 +1,11 @@
 {
     "env": {
         "browser": true,
-        "es2021": true,
-        "jest": true
+        "es2021": true
     },
     "extends": [
-        "react-app",
-        "react-app/jest",
-        "airbnb",
-        "airbnb-typescript",
-        "plugin:import/typescript"
+        "plugin:react/recommended",
+        "airbnb"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -17,12 +13,31 @@
             "jsx": true
         },
         "ecmaVersion": "latest",
-        "sourceType": "module",
-        "project": "./tsconfig.json"
+        "sourceType": "module"
     },
     "plugins": [
         "react",
+        "react-hooks",
         "@typescript-eslint"
     ],
-    "rules": {}
+    "rules": {
+        "import/prefer-default-export": "off",
+        "react/jsx-filename-extension": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/button-has-type": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        "import/extensions":[
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver":{
+            "typescript":{}
+        }
+    }
 }
