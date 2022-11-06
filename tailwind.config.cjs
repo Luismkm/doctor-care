@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './src/**/*.tsx',
-    './index.html'
+    './index.html',
   ],
   theme: {
     colors: {
@@ -18,17 +18,17 @@ module.exports = {
         200: '#F7F9F9',
         100: '#FFFAF1',
       },
-      gray:{
+      gray: {
         900: '#212529',
         700: '#495057',
-      }
+      },
 
     },
     extend: {
       fontFamily: {
-        sans: ['DM sans', 'sans-serif']
+        sans: ['DM sans', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};
