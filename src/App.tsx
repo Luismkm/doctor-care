@@ -1,10 +1,10 @@
-import './styles/main.css'
+import { Landing } from './pages/landing/landing';
+import './styles/main.css';
 
 function App() {
-
   return (
-    <h1 className="text-blue-500">Hello</h1>
-  )
+    <Landing />
+  );
 }
 
-export default App
+export default App;
