@@ -17,8 +17,8 @@ function Header() {
   });
 
   return (
-    <header className={`w-screen h-[72px] my-0 mx-auto transition-colors duration-1000 ${onScroll ? 'fixed bg-green-700' : 'bg-green-400'}`}>
-      <div className="flex justify-between items-center max-w-[1120px] mx-auto">
+    <header className={`w-screen my-0 mx-auto transition-colors duration-1000 ${onScroll ? 'fixed bg-green-700' : 'bg-green-400'}`}>
+      <div className="flex justify-between items-center max-w-[1120px] h-[72px] px-6 mx-auto">
         {
           onScroll
             ? <img src={logoWhite} className="w-[132px]" alt="Logo da Doctor Care" />

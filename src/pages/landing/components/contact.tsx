@@ -6,10 +6,10 @@ import { ButtonIcon } from '../../../components/buttonIcon';
 
 function Contact() {
   return (
-    <div className="max-w-[1120px] h-[599px] mx-auto">
-      <div className="grid grid-cols-2 items-center">
+    <div className="max-w-[1120px] h-[735px] lg:h-[599px] px-6 lg:px-0 mx-auto">
+      <div className="grid grid-row-2 lg:grid-cols-2 items-center">
         <div>
-          <strong className="text-[2.5rem] font-bold leading-[52px] text-gray-900 mt-[10px] text-start mb-10 block">
+          <strong className="text-3xl lg:text-[2.5rem] font-bold leading-[39px] lg:leading-[52px] text-gray-900 mt-[10px] text-start mb-10 block">
             Entre em contato
             <br />
             com a gente!
@@ -27,7 +27,7 @@ function Contact() {
           <ButtonIcon />
         </div>
         <div>
-          <img src={man} alt="Homem sentado, vestindo uma blusa bege mexendo no celular." />
+          <img className="mt-[60px] lg:mt-0" src={man} alt="Homem sentado, vestindo uma blusa bege mexendo no celular." />
         </div>
       </div>
     </div>
