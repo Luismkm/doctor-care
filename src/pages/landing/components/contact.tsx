@@ -6,7 +6,7 @@ import { ButtonIcon } from '../../../components/buttonIcon';
 
 function Contact() {
   return (
-    <div className="max-w-[1120px] h-[735px] lg:h-[599px] px-6 lg:px-0 mx-auto">
+    <div className="max-w-[1120px] mb-[100px] lg-[172px] px-6 lg:px-0 mx-auto">
       <div className="grid grid-row-2 lg:grid-cols-2 items-center">
         <div>
           <strong className="text-3xl lg:text-[2.5rem] font-bold leading-[39px] lg:leading-[52px] text-gray-900 mt-[10px] text-start mb-10 block">

@@ -24,9 +24,9 @@ function Header() {
             ? <img src={logoWhite} className="w-[132px]" alt="Logo da Doctor Care" />
             : <img src={logoImg} className="w-[132px]" alt="Logo da Doctor Care" />
         }
-        <nav className="hidden lg:block">
+        <nav className="hidden md:block">
           <ul className={`flex justify-around gap-8 mt-[26px] ${onScroll ? 'text-green-200' : 'text-green-700'}`}>
-            <li className={`font-bold border-b-2 w-[42px]  pb-[21px] cursor-pointer ${onScroll ? 'border-b-white-100' : 'border-b-green-700'}`}>Início</li>
+            <li className={`font-bold border-b-2 w-[42px]  pb-[20px] cursor-pointer ${onScroll ? 'border-b-white-100' : 'border-b-green-700'}`}>Início</li>
             <li className="cursor-pointer w-[44px] hover:font-bold">Sobre</li>
             <li className="cursor-pointer w-[63px] hover:font-bold">Serviços</li>
             <li className="cursor-pointer w-[100px] hover:font-bold">Depoimentos</li>
