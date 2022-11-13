@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './src/**/*.tsx',
     './index.html',
+    './src/**/*.{html,js,ts,tsx}', './node_modules/tw-elements/dist/js/**/*.js',
   ],
   theme: {
     colors: {
@@ -32,5 +33,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tw-elements/dist/plugin')],
 };

@@ -1,3 +1,4 @@
+import 'tw-elements';
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
 
@@ -6,10 +7,12 @@ import { Score } from './components/score';
 import { Service } from './components/service';
 import { About } from './components/about';
 import { Contact } from './components/contact';
+import { Drawer } from '../../components/drawer';
 
 function Landing() {
   return (
-    <div className="w-screen h-screen">
+    <>
+      <Drawer />
       <Header />
       <SubHeader />
       <Score />
@@ -17,8 +20,7 @@ function Landing() {
       <About />
       <Contact />
       <Footer />
-    </div>
-
+    </>
   );
 }
 

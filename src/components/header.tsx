@@ -32,13 +32,31 @@ function Header() {
             <li className="cursor-pointer w-[100px] hover:font-bold">Depoimentos</li>
           </ul>
         </nav>
-        <button className={`hidden lg:block text-sm uppercase border-[1px] rounded-[40px] font-bold px-5 py-[10px] transition-colors ${onScroll ? 'border-white-100 text-white-100 hover:bg-green-400 hover:text-green-700' : 'border-green-700 text-green-700 hover:text-white-100 hover:bg-green-700'}`}>
+        <button className={`hidden md:block lg:block text-sm uppercase border-[1px] rounded-[40px] font-bold px-5 py-[10px] transition-colors ${onScroll ? 'border-white-100 text-white-100 hover:bg-green-400 hover:text-green-700' : 'border-green-700 text-green-700 hover:text-white-100 hover:bg-green-700'}`}>
           Agendar Consulta
         </button>
         {
           onScroll
-            ? <img src={menuIconWhite} className="w-10 h-10 lg:hidden cursor-pointer" alt="Menu burger" />
-            : <img src={menuIcon} className="w-10 h-10 lg:hidden cursor-pointer" alt="Menu burger" />
+            ? (
+              <img
+                src={menuIconWhite}
+                className="w-10 h-10 md:hidden cursor-pointer"
+                alt="Menu burger"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              />
+            )
+            : (
+              <img
+                src={menuIcon}
+                className="w-10 h-10 md:hidden cursor-pointer"
+                alt="Menu burger"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              />
+            )
         }
       </div>
     </header>
