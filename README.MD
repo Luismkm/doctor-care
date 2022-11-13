@@ -4,7 +4,7 @@
 
 ## 📋 Sobre
 
-<p>Landing page responsivo(falta alguns breakpoints e menu para finalizar)</p>
+<p>Landing page 100% responsivo utilizando Tailwind CSS.</p>
 
 <br />
 
