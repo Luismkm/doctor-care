@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import logoImg from '../assets/logo.svg';
 import menuIcon from '../assets/menu.svg';
 import menuIconWhite from '../assets/menuWhite.svg';
@@ -25,11 +26,39 @@ function Header() {
             : <img src={logoImg} className="w-[132px]" alt="Logo da Doctor Care" />
         }
         <nav className="hidden md:block">
-          <ul className={`flex justify-around gap-8 mt-[26px] ${onScroll ? 'text-green-200' : 'text-green-700'}`}>
-            <li className={`font-bold border-b-2 w-[42px]  pb-[20px] cursor-pointer ${onScroll ? 'border-b-white-100' : 'border-b-green-700'}`}>Início</li>
-            <li className="cursor-pointer w-[44px] hover:font-bold">Sobre</li>
-            <li className="cursor-pointer w-[63px] hover:font-bold">Serviços</li>
-            <li className="cursor-pointer w-[100px] hover:font-bold">Depoimentos</li>
+          <ul className={`pb-[20px] flex justify-around gap-8 mt-[26px] ${onScroll ? 'text-green-200' : 'text-green-700'}`}>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? 'font-bold border-b-2 w-[42px] pb-[21px] ' : '')}
+              >
+                Início
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? 'font-bold border-b-2 w-[42px]  pb-[21px]' : undefined)}
+              >
+                Sobre
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/services"
+                className={({ isActive }) => (isActive ? 'font-bold border-b-2 w-[42px]  pb-[21px]' : undefined)}
+              >
+                Serviços
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/testimonial"
+                className={({ isActive }) => (isActive ? 'font-bold border-b-2 w-[42px]  pb-[21px]' : undefined)}
+              >
+                Depoimentos
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <button className={`hidden md:block lg:block text-sm uppercase border-[1px] rounded-[40px] font-bold px-5 py-[10px] transition-colors ${onScroll ? 'border-white-100 text-white-100 hover:bg-green-400 hover:text-green-700' : 'border-green-700 text-green-700 hover:text-white-100 hover:bg-green-700'}`}>
