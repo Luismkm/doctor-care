@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logoImg from '../assets/logo.svg';
 import menuIcon from '../assets/menu.svg';
 import menuIconWhite from '../assets/menuWhite.svg';
@@ -22,8 +22,8 @@ function Header() {
       <div className="flex justify-between items-center max-w-[1120px] h-[72px] px-6 mx-auto">
         {
           onScroll
-            ? <img src={logoWhite} className="w-[132px]" alt="Logo da Doctor Care" />
-            : <img src={logoImg} className="w-[132px]" alt="Logo da Doctor Care" />
+            ? <Link to="/"><img src={logoWhite} className="w-[132px]" alt="Logo da Doctor Care" /></Link>
+            : <Link to="/"><img src={logoImg} className="w-[132px]" alt="Logo da Doctor Care" /></Link>
         }
         <nav className="hidden md:block">
           <ul className={`pb-[20px] flex justify-around gap-8 mt-[26px] ${onScroll ? 'text-green-200' : 'text-green-700'}`}>

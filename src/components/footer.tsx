@@ -13,9 +13,15 @@ function Footer() {
           <span className="text-green-100">Todos os direitos reservados.</span>
         </div>
         <div className="flex gap-8 mt-8 lg:mt-0">
-          <FaInstagram className="cursor-pointer" color="#FFFAF1" size={24} />
-          <FiFacebook className="cursor-pointer" color="#FFFAF1" size={24} />
-          <SlSocialYoutube className="cursor-pointer" color="#FFFAF1" size={24} />
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="cursor-pointer" color="#FFFAF1" size={24} />
+          </a>
+          <a href="https://www.facebook.com/ target=" target="_blank" rel="noopener noreferrer">
+            <FiFacebook className="cursor-pointer" color="#FFFAF1" size={24} />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <SlSocialYoutube className="cursor-pointer" color="#FFFAF1" size={24} />
+          </a>
         </div>
       </div>
     </div>
