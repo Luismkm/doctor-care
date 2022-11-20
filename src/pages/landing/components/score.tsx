@@ -1,7 +1,7 @@
 function Score() {
   return (
     <div className="grid md:grid-cols-5 md:px-[80px] place-items-center max-w-[1120px]
-    md:max-w-[1120px] h-[470px] md:h-[210px] mx-4 lg:mx-auto mt-[-268px] md:mt-[-132px] bg-green-100 border border-green-400"
+    md:max-w-[1120px] h-[470px] md:h-[210px] mx-4 lg:mx-auto mt-[-289px] md:mt-[-132px] bg-green-100 border border-green-400"
     >
       <div className="flex flex-col md:flex-col justify-center items-center">
         <span className="font-bold text-5xl text-gray-900">+3.500</span>

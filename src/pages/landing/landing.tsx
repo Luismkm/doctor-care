@@ -11,7 +11,7 @@ import { Drawer } from '../../components/drawer';
 
 function Landing() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Drawer />
       <Header />
       <SubHeader />
@@ -20,7 +20,7 @@ function Landing() {
       <About />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
