@@ -21,7 +21,7 @@
 
 <br />
 
-[Deploy Netify](https://tubular-torte-9a1090.netlify.app/)
+[Deploy Netlify](https://tubular-torte-9a1090.netlify.app/)
 
 [Acessar Layout no Figma](https://www.figma.com/file/FOKHUTppgZN9GvdR7j9aA0/DoctorCare-(Community)?node-id=61%3A144)
 
